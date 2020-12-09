@@ -1,0 +1,19 @@
+repositories {
+    jcenter()
+}
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath'net.serenity-bdd:serenity-gradle-plugin:2.2.0'
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'net.serenity-bdd.aggregator'
+
+dependencies {
+    compile group: 'net.serenity-bdd', name: 'serenity-junit', version: '2.3.9'
+}
